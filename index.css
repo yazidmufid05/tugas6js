@@ -1,0 +1,67 @@
+body {
+    
+    background: linear-gradient(45deg, #FF5A1D, #FFAF9E);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    
+}
+
+.login-container {
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    padding: 20px;
+    width: 300px;
+}
+
+.login-container h2 {
+    color: #333;
+}
+
+.input-container {
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.input-container input {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-bottom: 1px solid #ccc;
+    background: transparent;
+    outline: none;
+    color: #333;
+}
+
+.input-container label {
+    position: absolute;
+    top: 10px;
+    left: 0;
+    color: #999;
+    pointer-events: none;
+    transition: 0.2s all;
+}
+
+.input-container input:focus + label, .input-container input:valid + label {
+    top: -10px;
+    font-size: 12px;
+    color: #FF5A1D;
+}
+
+button {
+    background: #FF5A1D;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: radius 0.3s;
+}
+
+button:hover {
+    background: #FF2D00;
+}
